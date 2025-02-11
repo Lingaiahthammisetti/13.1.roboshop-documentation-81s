@@ -1,3 +1,26 @@
+
+mongodb.lingaiah.online
+
+catalogue.lingaiah.online
+
+user.lingaiah.online
+
+cart.lingaiah.online
+
+lingaiah.online
+
+redis.lingaiah.online
+
+mysql.lingaiah.online
+
+shipping.lingaiah.online
+
+rabbitmq.lingaiah.online
+
+payment.lingaiah.online
+
+dispatch.lingaiah.online
+
 # roboshop-documentation
 
 Below is the communication between components and dependency. This dependency comes from **Development team**. Architects decide that, DevOps has no scope in this.
@@ -21,3 +44,5 @@ Below is the communication between components and dependency. This dependency co
 * We can use NoSQL databases like MongoDB for storing the product information.
 * We can use Cache servers like Redis to access the data with lightening speed.
 * We can use MQ Servers like RabbitMQ, ActiveMQ, Kafka, etc for asynchronous communication.
+
+

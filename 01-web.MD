@@ -63,11 +63,11 @@ location /images/ {
   root   /usr/share/nginx/html;
   try_files $uri /images/placeholder.jpg;
 }
-location /api/catalogue/ { proxy_pass http://localhost:8080/; }
-location /api/user/ { proxy_pass http://localhost:8080/; }
-location /api/cart/ { proxy_pass http://localhost:8080/; }
-location /api/shipping/ { proxy_pass http://localhost:8080/; }
-location /api/payment/ { proxy_pass http://localhost:8080/; }
+location /api/catalogue/ { proxy_pass http://catalogue.lingaiah.online:8080/; }
+location /api/user/ { proxy_pass http://user.lingaiah.online:8080/; }
+location /api/cart/ { proxy_pass http://cart.lingaiah.online:8080/; }
+location /api/shipping/ { proxy_pass http://shipping.lingaiah.online:8080/; }
+location /api/payment/ { proxy_pass http://payment.lingaiah.online:8080/; }
 
 location /health {
   stub_status on;
