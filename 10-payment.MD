@@ -2,7 +2,7 @@
 
 This service is responsible for payments in RoboShop e-commerce app. This service is written on Python 3.6, So need it to run this app.
 
-Install Python 3.11
+Install Python 3.6
 
 ```
 dnf install python3.11 gcc python3-devel -y
@@ -63,11 +63,11 @@ Description=Payment Service
 [Service]
 User=root
 WorkingDirectory=/app
-Environment=CART_HOST=cart.lingaiah.online
+Environment=CART_HOST=<CART-SERVER-IPADDRESS>
 Environment=CART_PORT=8080
-Environment=USER_HOST=user.lingaiah.online
+Environment=USER_HOST=<USER-SERVER-IPADDRESS>
 Environment=USER_PORT=8080
-Environment=AMQP_HOST=rabbitmq.lingaiah.online
+Environment=AMQP_HOST=<RABBITMQ-SERVER-IPADDRESS>
 Environment=AMQP_USER=roboshop
 Environment=AMQP_PASS=roboshop123
 
